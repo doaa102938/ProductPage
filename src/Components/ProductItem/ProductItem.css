@@ -240,14 +240,18 @@ p {
     }
 
     .Counter {
-        width: 95%;
+        width: 270px;
 
     }
 
     .AddCart {
-        width: 410px;
+        width: 300px;
     }
 
+    .Details {
+        width: 70%;
+        margin-bottom: 30px;
+    }
 
 
 
