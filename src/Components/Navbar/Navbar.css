@@ -1,0 +1,165 @@
+nav {
+    height: 60px;
+    border-bottom: 2px solid hsl(223, 64%, 98%);
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+}
+
+
+.Menubtn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: 30px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+}
+
+
+
+li a {
+    text-decoration: unset;
+    color: hsl(219, 9%, 45%);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.links li a {
+    position: relative;
+}
+
+.links li a:hover::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: -40px;
+    background-color: hsl(26, 100%, 55%);
+    height: 3px;
+    left: 0;
+}
+
+li a:hover {
+    color: hsl(220, 13%, 13%);
+}
+
+.Avatar {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.Avatar:hover {
+    border: 2px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
+}
+
+.btn-cart {
+    cursor: pointer;
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    background-color: hsl(26, 100%, 55%);
+    color: white;
+    top: -40%;
+    right: -40%;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 15px;
+    line-height: 100%;
+}
+
+.Cart-Avatar-Group {
+    display: flex;
+    align-items: center;
+    flex-grow: 4;
+    justify-content: end;
+    gap: 40px;
+}
+
+.linksVertical {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .Menubtn {
+        visibility: visible;
+        margin-right: 10px;
+    }
+
+
+    .links {
+        display: none;
+    }
+
+    nav {
+        border-bottom: none;
+        padding: 20px;
+    }
+
+    .Menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+
+    }
+
+    .close:hover {
+        cursor: pointer;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        font-size: 1.8rem;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+        gap: 2.3rem;
+        list-style: none;
+        height: 1000px;
+    }
+
+    .linksVertical {
+        display: flex;
+        background-color: white;
+        width: 60%;
+        padding: 25px;
+
+    }
+
+    .close {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    .Cart-Avatar-Group {
+        align-items: center;
+        justify-content: end;
+        gap: 20px;
+    }
+
+
+}
